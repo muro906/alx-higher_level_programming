@@ -2,7 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
     try:
         if len(matrix) == 0:
-            print("{}".format('$'))
+            return
         rows = len(matrix)
         cols = len(matrix[0])
         for i in range(rows):
@@ -11,6 +11,5 @@ def print_matrix_integer(matrix=[[]]):
                     print("{:d}".format(matrix[i][j]), end="")
                 else:
                     print("{:d} ".format(matrix[i][j]), end="")
-            print("{}".format('$'))
     except TypeError:
         pass
