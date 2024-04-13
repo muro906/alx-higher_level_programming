@@ -48,3 +48,10 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+    def __str__(self) -> str:
+        """Print str representation of object
+        Returns:
+            int: size of the square
+        """
+        return self.__size
