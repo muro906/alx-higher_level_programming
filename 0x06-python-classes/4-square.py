@@ -27,6 +27,7 @@ class Square:
         """
         return self.__size ** 2
 
+    @property
     def size(self):
         """Retrieves the value of size
         Returns:
@@ -34,6 +35,7 @@ class Square:
         """
         return self.__size
 
+    @size.setter
     def size(self, size):
         """Setter for the size attribute
         Args:
@@ -48,10 +50,3 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-
-    def __str__(self) -> str:
-        """Print str representation of object
-        Returns:
-            int: size of the square
-        """
-        return self.__size
