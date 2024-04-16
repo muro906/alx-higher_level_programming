@@ -71,10 +71,8 @@ class Rectangle:
         """Print str representation of the object"""
         if self.__height == 0 or self.__width == 0:
             print()
-            return
         else:
             for i in range(0, self.__height):
                 for j in range(0, self.__width):
                     print('#', end="")
                 print()
-            return
